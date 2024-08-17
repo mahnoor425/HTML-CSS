@@ -1,0 +1,47 @@
+/* Default Button styles */
+body{
+    font-family: 'Cascadia code';
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .4s ease-in;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    section #open{
+        background-color: blueviolet;
+        color: white;
+    }
+    dialog{
+        padding: 10px;
+        width: 350px;
+        border: none;
+        div{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: end;
+            margin-top: 30px;
+            button{
+                font-size: 14px;
+            }
+            button:nth-child(2){
+                background-color: rgb(80, 135, 137);
+                color: white;
+            }
+            button:nth-child(2):hover{
+                background-color: cadetblue;
+            }
+        }
+    }
+}
