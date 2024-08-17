@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML Dialog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Dialog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>HTML Dialog</h1>
+      <section>
+        <button id="open" onclick="dialog.showModal()">Open Dialog</button>
+      </section>
+      <dialog id="dialog">
+        This is an <b>HTML Dialog</b>.
+        <div>
+          <button onclick="dialog.close()">Cancel</button>
+          <button>Continue</button>
+        </div>
+      </dialog>
+    </main>
+  </body>
+</html>
