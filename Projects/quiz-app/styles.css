@@ -1,10 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main{
@@ -22,14 +19,6 @@ header nav{
     background-color: teal;
     color: white;
 }
-
-header nav .nav-items{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 
 nav .search-input{
     background-color: white;
@@ -49,12 +38,13 @@ nav .search-input{
     }
 }
 #card {
-    padding-top: 80px;
+    padding-top: 50px;
 
     height: 80px;
     width: 180px;
     background-color: rgb(225, 222, 222);
 }
+
 .img {
      display: flex;
      text-align: center;
@@ -73,41 +63,87 @@ nav .search-input{
     flex-wrap: wrap;
  }
 
+ 
+
  .cards .card{
-    background-color: rgb(241, 241, 241);
-    padding: 10px;
-    width: 12rem;
+    background-color: aliceblue;
+     padding: 10px;
+     width: 12rem;
+     gap:20px;
+     align-items: center;
+     justify-content: center;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap:20px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
     padding-bottom: 15px;
     cursor: pointer;
     transition: .3s ease-in;
  }
+ button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
- .cards .card:hover{
-    box-shadow: .3px .2px .3px 2px whitesmoke;
- }
+}
+/* Dark Theme */
 
- /* Dark theme */
-
- @media (prefers-color-scheme:dark){
-    body{
-        background-color: #010101;
-        color: white;
+@media (prefers-color-scheme:dark) {
+    body {
+background-color: black;
+color: white;
     }
-    .cards .card{
+    .cards .card {
         background-color: #3d3d3d;
     }
- }
+}
 
- /* Responsive design */
-
- @media screen and (max-width:740px) {
+/* Responsive design */
+@media screen and (max-width-650px) {
     .cards {
-        justify-content: center;
+justify-content: center;
     }
+}
+dialog {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dialog-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.dialog-buttons button {
+    cursor: pointer;
+    background: rgb(76, 119, 11);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: .3s ease-in;
+}
+
+.dialog-buttons button:hover{
+    background-color: rgb(62, 99, 5);
+}
+
+.dialog-buttons button:first-child{
+    background-color: transparent;
+    outline: .8px dashed white;
+}
+
+.dialog-buttons button:first-child:hover{
+    background-color: #333;
+}
+
+
+.cards .card:hover{
+    box-shadow: .3px .2px .3px 2px whitesmoke;
  }
